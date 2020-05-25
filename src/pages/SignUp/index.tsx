@@ -28,7 +28,7 @@ const SignUp: React.FC = () => {
       });
 
       await schema.validate(data, {
-        abortEarly: true,
+        abortEarly: false,
       });
     } catch (err) {
       const errors = getValidationErrors(err);
